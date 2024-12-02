@@ -1,0 +1,42 @@
+#46
+import math;
+n = int(input());
+a = 2 * n + 1;
+res = math.factorial(a);
+print(res);
+
+#44
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int b;
+    float a, res;
+    float min = 0;
+    float max = 0;
+    do
+    {
+        cout << "enter a: ";
+        cin >> a;
+
+        cout << "enter b: ";
+        cin >> b;
+    } while (a <= b);
+    res = a * a + 2 * a - 5;
+    a += 0.3;
+    if (min > res)
+    {
+        min = res;
+    }
+    if (max < res)
+    {
+        max = res;
+    }
+    printf("%.2f\n", max);
+    printf("%.2f", min);
+
+    return 0;
+}
