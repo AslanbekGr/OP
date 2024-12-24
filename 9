@@ -1,0 +1,32 @@
+15 на Си
+#include <stdio.h>
+#include <math.h>
+
+void sum(int x)
+{
+    int b = ceil(x / 2);
+    int a = ceil(x / 2);
+    int suma = a * b;
+    printf("%d", suma);
+}
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    sum(n);
+    return 0;
+}
+
+5 на питоне
+
+
+def summa (x, y):
+    s = max(x, 2*y);
+    v = max((2 * x) - y, y)
+    z = s * v
+    print(z)
+
+a = int(input())
+b = int(input())
+summa(a,b);
